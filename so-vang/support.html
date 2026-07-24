@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hỗ trợ — Sổ Vàng</title>
+<meta name="description" content="Trang hỗ trợ ứng dụng Sổ Vàng / Support page for the So Vang app." />
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fbfaf7;
+    --ink: #1b2420;
+    --ink-soft: #565f59;
+    --accent: #9a6f0a;
+    --line: #e4e2d8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14140f;
+      --ink: #edeae2;
+      --ink-soft: #b0aa9c;
+      --accent: #e0bb5c;
+      --line: #34322a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+  h1 {
+    font-size: 28px;
+    margin: 0 0 6px;
+    letter-spacing: -0.01em;
+  }
+  .sub {
+    color: var(--ink-soft);
+    font-size: 14px;
+    margin: 0 0 20px;
+  }
+  .langbar {
+    font-size: 14px;
+    margin: 0 0 40px;
+    color: var(--ink-soft);
+  }
+  h2 {
+    font-size: 18px;
+    margin: 36px 0 10px;
+    border-top: 1px solid var(--line);
+    padding-top: 28px;
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  h3 {
+    font-size: 15.5px;
+    margin: 24px 0 6px;
+  }
+  p, li { font-size: 15.5px; color: var(--ink); }
+  ul { padding-left: 22px; margin: 10px 0; }
+  li { margin-bottom: 8px; }
+  a { color: var(--accent); }
+  strong { font-weight: 600; }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-soft);
+    font-size: 13px;
+  }
+  footer a { margin-right: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Hỗ trợ · Support</h1>
+  <p class="sub">Sổ Vàng (So Vang)</p>
+  <p class="langbar"><a href="#vi">Tiếng Việt</a> · <a href="#en">English</a></p>
+
+  <h2 id="vi">Tiếng Việt</h2>
+
+  <h3>Liên hệ</h3>
+  <p>Mọi câu hỏi, báo lỗi hay góp ý tính năng, gửi email tới <a href="mailto:ducdv.bk94@gmail.com">ducdv.bk94@gmail.com</a>. Khi báo lỗi, bạn nên ghi rõ dòng máy, phiên bản hệ điều hành và các bước tái hiện để tôi xử lý nhanh hơn.</p>
+
+  <h3>Câu hỏi thường gặp</h3>
+  <ul>
+    <li><strong>Giá vàng lấy từ đâu, bao lâu cập nhật?</strong> Ứng dụng đọc giá niêm yết công khai của SJC, PNJ, DOJI, Phú Quý, Bảo Tín Minh Châu, cùng giá vàng thế giới (XAU/USD) và tỷ giá USD/VND. Máy chủ cập nhật khoảng 5 phút một lần; mỗi sản phẩm hiển thị mốc thời gian cập nhật gần nhất. Giá chỉ mang tính tham khảo, không phải báo giá giao dịch.</li>
+    <li><strong>Vì sao giá trong app lệch với giá tại cửa hàng?</strong> Cửa hàng có thể đổi giá trước khi trang niêm yết cập nhật, và giá thực tế còn phụ thuộc loại vàng, phí gia công. Luôn kiểm tra lại tại cửa hàng trước khi giao dịch.</li>
+    <li><strong>Có cần tạo tài khoản không?</strong> Không. Ứng dụng không có đăng nhập. Toàn bộ giao dịch, danh mục, ví giả lập và ảnh hóa đơn nằm trên máy bạn.</li>
+    <li><strong>Sao lưu và chuyển sang máy mới thế nào?</strong> Vào <strong>Cài đặt → Sao lưu dữ liệu → Xuất dữ liệu</strong> để tạo file JSON, lưu file đó lại, rồi dùng <strong>Nhập dữ liệu</strong> trên máy mới.</li>
+    <li><strong>"Giả lập" là gì?</strong> Đó là ví tập giao dịch bằng tiền ảo, luôn có nhãn <strong>GIẢ LẬP</strong> màu tím để phân biệt với danh mục thật. Lệnh mua khớp ở giá bán, lệnh bán khớp ở giá mua — giống như khi bạn giao dịch thật và chịu chênh lệch mua/bán.</li>
+    <li><strong>Vì sao tôi không nhận được cảnh báo giá?</strong> Kiểm tra quyền thông báo của ứng dụng trong cài đặt hệ thống, và kiểm tra lại ngưỡng giá đã đặt trong <strong>Cài đặt → Cảnh báo giá</strong>. Cảnh báo chỉ bắn khi máy chủ ghi nhận giá vượt ngưỡng, nên có thể trễ vài phút so với thị trường.</li>
+    <li><strong>Lãi/lỗ được tính thế nào?</strong> Giá vốn tính theo bình quân gia quyền cho từng sản phẩm; lãi/lỗ chưa thực hiện dùng giá <em>mua vào</em> hiện tại của thương hiệu; lãi/lỗ đã thực hiện tính tại thời điểm bán so với giá vốn bình quân khi đó.</li>
+    <li><strong>Làm sao xóa dữ liệu?</strong> Xem <a href="/so-vang/delete-data.html">trang Xóa dữ liệu</a>.</li>
+  </ul>
+
+  <h3>Quyền riêng tư</h3>
+  <p>Xem <a href="/so-vang/">Chính sách quyền riêng tư</a> để biết dữ liệu nào được xử lý và vì sao.</p>
+
+  <h2 id="en">English</h2>
+
+  <h3>Contact</h3>
+  <p>Questions, bug reports or feature requests — email <a href="mailto:ducdv.bk94@gmail.com">ducdv.bk94@gmail.com</a>. For bug reports, please include your device model, OS version and the steps to reproduce.</p>
+
+  <h3>Common questions</h3>
+  <ul>
+    <li><strong>Where do the prices come from, and how often do they update?</strong> The app reads publicly listed prices from SJC, PNJ, DOJI, Phu Quy and Bao Tin Minh Chau, plus the world gold price (XAU/USD) and the USD/VND rate. The server refreshes roughly every 5 minutes, and each product shows its own last-updated time. Prices are for reference only, not a dealing quote.</li>
+    <li><strong>Why does the app's price differ from the shop's?</strong> Shops can change prices before their public page updates, and the real price also depends on the gold type and workmanship fees. Always confirm at the shop before trading.</li>
+    <li><strong>Do I need an account?</strong> No. There is no sign-in. All transactions, holdings, the practice wallet and receipt photos stay on your device.</li>
+    <li><strong>How do I back up or move to a new phone?</strong> Go to <strong>Settings → Data backup → Export data</strong> to produce a JSON file, keep that file, then use <strong>Import</strong> on the new device.</li>
+    <li><strong>What is "practice" mode?</strong> A simulated wallet using play money, always marked with the purple <strong>GIẢ LẬP</strong> badge so it is never confused with your real portfolio. Buys fill at the sell price and sells at the buy price, so you experience the real bid/ask spread.</li>
+    <li><strong>Why am I not getting price alerts?</strong> Check the app's notification permission in your system settings and re-check the threshold under <strong>Settings → Price alerts</strong>. Alerts fire only when the server observes a price crossing the threshold, so they can lag the market by a few minutes.</li>
+    <li><strong>How is profit/loss calculated?</strong> Cost basis is a weighted average per product; unrealized P/L uses the brand's current <em>buy</em> price; realized P/L is computed at the time of sale against the average cost at that moment.</li>
+    <li><strong>How do I delete my data?</strong> See the <a href="/so-vang/delete-data.html">data deletion page</a>.</li>
+  </ul>
+
+  <h3>Privacy</h3>
+  <p>See the <a href="/so-vang/">Privacy Policy</a> for what data is processed and why.</p>
+
+  <footer>
+    <a href="/so-vang/">Quyền riêng tư</a>
+    <a href="/so-vang/support.html">Hỗ trợ</a>
+    <a href="/so-vang/delete-data.html">Xóa dữ liệu</a>
+    <br /><br />Sổ Vàng
+  </footer>
+</main>
+</body>
+</html>

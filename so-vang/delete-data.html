@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Xóa dữ liệu — Sổ Vàng</title>
+<meta name="description" content="Hướng dẫn xóa dữ liệu trong ứng dụng Sổ Vàng / How to delete your data in the So Vang app." />
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fbfaf7;
+    --ink: #1b2420;
+    --ink-soft: #565f59;
+    --accent: #9a6f0a;
+    --line: #e4e2d8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14140f;
+      --ink: #edeae2;
+      --ink-soft: #b0aa9c;
+      --accent: #e0bb5c;
+      --line: #34322a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+  h1 {
+    font-size: 28px;
+    margin: 0 0 6px;
+    letter-spacing: -0.01em;
+  }
+  .sub {
+    color: var(--ink-soft);
+    font-size: 14px;
+    margin: 0 0 20px;
+  }
+  .langbar {
+    font-size: 14px;
+    margin: 0 0 40px;
+    color: var(--ink-soft);
+  }
+  h2 {
+    font-size: 18px;
+    margin: 36px 0 10px;
+    border-top: 1px solid var(--line);
+    padding-top: 28px;
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  h3 {
+    font-size: 15.5px;
+    margin: 24px 0 6px;
+  }
+  p, li { font-size: 15.5px; color: var(--ink); }
+  ul, ol { padding-left: 22px; margin: 10px 0; }
+  li { margin-bottom: 8px; }
+  a { color: var(--accent); }
+  strong { font-weight: 600; }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-soft);
+    font-size: 13px;
+  }
+  footer a { margin-right: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Xóa dữ liệu · Delete your data</h1>
+  <p class="sub">Sổ Vàng (So Vang)</p>
+  <p class="langbar"><a href="#vi">Tiếng Việt</a> · <a href="#en">English</a></p>
+
+  <h2 id="vi">Tiếng Việt</h2>
+  <p><strong>Sổ Vàng không có tài khoản người dùng</strong> — không đăng ký, không đăng nhập. Vì vậy không có "hồ sơ tài khoản" nào để xóa. Dữ liệu của bạn nằm ở hai nơi, và bạn tự xóa được cả hai ngay trong ứng dụng.</p>
+
+  <h3>1. Dữ liệu trên thiết bị (giao dịch, danh mục, ví giả lập, cửa hàng, ảnh hóa đơn)</h3>
+  <ol>
+    <li>Mở ứng dụng, vào tab <strong>Cài đặt</strong>.</li>
+    <li>Chọn <strong>Sao lưu dữ liệu</strong>.</li>
+    <li>Chọn <strong>Xóa toàn bộ dữ liệu</strong>, bấm <strong>Tiếp tục</strong>, gõ <strong>XOA</strong> để xác nhận rồi bấm <strong>Xóa vĩnh viễn</strong>.</li>
+  </ol>
+  <p>Thao tác này xóa vĩnh viễn toàn bộ giao dịch, cửa hàng, ví giả lập và ảnh hóa đơn trên máy — <strong>không thể hoàn tác</strong>. Nếu muốn giữ lại một bản, hãy dùng <strong>Xuất dữ liệu</strong> để lưu tệp JSON trước khi xóa.</p>
+  <p>Gỡ cài đặt ứng dụng cũng xóa toàn bộ dữ liệu cục bộ trên thiết bị đó.</p>
+
+  <h3>2. Dữ liệu trên máy chủ (chỉ có nếu bạn đặt cảnh báo giá)</h3>
+  <p>Nếu bạn từng tạo cảnh báo giá, máy chủ lưu ngưỡng giá và một mã thiết bị đẩy (push token) để gửi thông báo. Không có thông tin cá nhân nào khác được lưu.</p>
+  <ol>
+    <li>Vào <strong>Cài đặt → Cảnh báo giá</strong>.</li>
+    <li>Xóa từng cảnh báo trong danh sách.</li>
+  </ol>
+  <p>Xóa hết cảnh báo là toàn bộ dữ liệu liên quan tới thiết bị của bạn không còn trên máy chủ nữa.</p>
+
+  <h3>Cần hỗ trợ thêm?</h3>
+  <p>Nếu không truy cập được ứng dụng (mất máy, đã gỡ app…) và muốn chắc chắn mọi cảnh báo còn sót được xóa, gửi email tới <a href="mailto:ducdv.bk94@gmail.com">ducdv.bk94@gmail.com</a>. Yêu cầu sẽ được xử lý trong vòng 30 ngày.</p>
+
+  <h2 id="en">English</h2>
+  <p><strong>So Vang has no user accounts</strong> — no sign-up, no sign-in — so there is no account profile to delete. Your data lives in two places, and you can remove both yourself from inside the app.</p>
+
+  <h3>1. On-device data (transactions, portfolio, practice wallet, stores, receipt photos)</h3>
+  <ol>
+    <li>Open the app and go to the <strong>Settings</strong> tab.</li>
+    <li>Tap <strong>Data backup</strong>.</li>
+    <li>Tap <strong>Delete all data</strong>, tap <strong>Continue</strong>, type <strong>XOA</strong> to confirm, then tap <strong>Delete forever</strong>.</li>
+  </ol>
+  <p>This permanently erases every transaction, store, practice wallet entry and receipt photo on the device — <strong>it cannot be undone</strong>. To keep a copy first, use <strong>Export data</strong> to save a JSON file before deleting.</p>
+  <p>Uninstalling the app also removes all locally stored data on that device.</p>
+
+  <h3>2. Server-side data (only exists if you set price alerts)</h3>
+  <p>If you created a price alert, our server stores the price threshold and a push device token so notifications can be delivered. No other personal information is stored.</p>
+  <ol>
+    <li>Go to <strong>Settings → Price alerts</strong>.</li>
+    <li>Delete each alert in the list.</li>
+  </ol>
+  <p>Once all alerts are deleted, no data tied to your device remains on our server.</p>
+
+  <h3>Need help?</h3>
+  <p>If you can no longer access the app (lost device, already uninstalled) and want to be sure any remaining alerts are removed, email <a href="mailto:ducdv.bk94@gmail.com">ducdv.bk94@gmail.com</a>. Requests are handled within 30 days.</p>
+
+  <footer>
+    <a href="/so-vang/">Quyền riêng tư</a>
+    <a href="/so-vang/support.html">Hỗ trợ</a>
+    <a href="/so-vang/delete-data.html">Xóa dữ liệu</a>
+    <br /><br />Sổ Vàng
+  </footer>
+</main>
+</body>
+</html>
