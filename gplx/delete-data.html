@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Xóa dữ liệu — Ôn thi GPLX</title>
+<meta name="description" content="Hướng dẫn xóa dữ liệu trong ứng dụng Ôn thi GPLX / How to delete your data in the On thi GPLX app." />
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f8f9fc;
+    --ink: #171e30;
+    --ink-soft: #5a6478;
+    --accent: #2f6fed;
+    --line: #e2e6f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f131c;
+      --ink: #e8ecf5;
+      --ink-soft: #a3abbd;
+      --accent: #7ba5f5;
+      --line: #2a3040;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+  h1 {
+    font-size: 28px;
+    margin: 0 0 6px;
+    letter-spacing: -0.01em;
+  }
+  .updated, .sub {
+    color: var(--ink-soft);
+    font-size: 14px;
+    margin: 0 0 20px;
+  }
+  .langbar {
+    font-size: 14px;
+    margin: 0 0 40px;
+    color: var(--ink-soft);
+  }
+  h2 {
+    font-size: 18px;
+    margin: 36px 0 10px;
+    border-top: 1px solid var(--line);
+    padding-top: 28px;
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  h3 {
+    font-size: 15.5px;
+    margin: 24px 0 6px;
+  }
+  p, li { font-size: 15.5px; color: var(--ink); }
+  ul, ol { padding-left: 22px; margin: 10px 0; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); }
+  strong { font-weight: 600; }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-soft);
+    font-size: 13px;
+  }
+  footer a { margin-right: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Xóa dữ liệu · Delete your data</h1>
+  <p class="sub">Ôn thi GPLX (On thi GPLX)</p>
+  <p class="langbar"><a href="#vi">Tiếng Việt</a> · <a href="#en">English</a></p>
+
+  <h2 id="vi">Tiếng Việt</h2>
+  <p><strong>Ôn thi GPLX không có tài khoản người dùng</strong> — không đăng ký, không đăng nhập, và chúng tôi không có máy chủ lưu dữ liệu của bạn. Vì vậy không có "hồ sơ tài khoản" nào để xóa. Toàn bộ dữ liệu nằm trên chính máy bạn và bạn tự xóa được.</p>
+
+  <h3>1. Xóa toàn bộ dữ liệu học tập</h3>
+  <p>Dữ liệu này gồm hạng bằng đang ôn, câu đã đánh dấu, số lần trả lời sai, lịch ôn tập ngắt quãng, lịch sử thi thử và các tuỳ chọn trong Cài đặt.</p>
+  <p>Chọn một trong hai cách:</p>
+  <ul>
+    <li><strong>Gỡ cài đặt ứng dụng.</strong> Thao tác này xóa sạch mọi dữ liệu ứng dụng trên thiết bị đó.</li>
+    <li><strong>Xóa dữ liệu ứng dụng từ hệ điều hành</strong> mà vẫn giữ ứng dụng: vào <strong>Cài đặt của máy → Ứng dụng → Ôn thi GPLX → Bộ nhớ → Xóa dữ liệu</strong>. Đường dẫn có thể khác đôi chút tùy hãng máy và phiên bản Android.</li>
+  </ul>
+  <p>Cả hai cách đều <strong>không thể hoàn tác</strong> — tiến độ ôn tập sẽ mất hoàn toàn.</p>
+
+  <h3>2. Xóa khóa API cho tính năng giải thích bằng AI</h3>
+  <p>Chỉ áp dụng nếu bạn từng tự nhập khóa API của Anthropic. Khóa được lưu trên máy bạn, không nằm trên máy chủ của chúng tôi.</p>
+  <ol>
+    <li>Mở ứng dụng, vào tab <strong>Cài đặt</strong>.</li>
+    <li>Xóa nội dung trong ô nhập <strong>khóa API</strong> và lưu lại.</li>
+  </ol>
+  <p>Nếu bạn muốn thu hồi khóa hoàn toàn, hãy xóa khóa đó trong bảng điều khiển tài khoản Anthropic của bạn — đó là tài khoản của bạn với Anthropic, chúng tôi không truy cập được.</p>
+
+  <h3>3. Dữ liệu thống kê ẩn danh</h3>
+  <p>Ứng dụng gửi số liệu sử dụng ẩn danh tới Google Firebase Analytics. Dữ liệu này <strong>không gắn với danh tính của bạn</strong> — không có tên, email hay số điện thoại — nên chúng tôi không thể tra cứu và xóa riêng phần của một người dùng cụ thể. Google tự động xóa dữ liệu này sau thời hạn lưu trữ mặc định.</p>
+
+  <h3>Cần hỗ trợ?</h3>
+  <p>Email: <a href="mailto:ducdv.bk94@gmail.com">ducdv.bk94@gmail.com</a> · Xem thêm <a href="/gplx/">Chính sách quyền riêng tư</a>.</p>
+
+  <h2 id="en">English</h2>
+  <p><strong>On thi GPLX has no user accounts</strong> — no sign-up, no sign-in, and we run no server that stores your data. There is therefore no "account profile" to delete. All of your data lives on your own device, and you can remove it yourself.</p>
+
+  <h3>1. Delete all study data</h3>
+  <p>This covers your selected license class, bookmarks, wrong-answer counts, spaced-repetition schedule, mock-exam history and app settings.</p>
+  <p>Choose either method:</p>
+  <ul>
+    <li><strong>Uninstall the app.</strong> This wipes all app data on that device.</li>
+    <li><strong>Clear the app's data from your OS</strong> while keeping the app installed: go to <strong>System Settings → Apps → Ôn thi GPLX → Storage → Clear data</strong>. The exact path varies slightly by manufacturer and Android version.</li>
+  </ul>
+  <p>Both methods are <strong>irreversible</strong> — your study progress is lost completely.</p>
+
+  <h3>2. Delete your AI explanation API key</h3>
+  <p>Only applies if you previously entered your own Anthropic API key. The key is stored on your device, never on our servers.</p>
+  <ol>
+    <li>Open the app and go to the <strong>Settings</strong> tab.</li>
+    <li>Clear the <strong>API key</strong> field and save.</li>
+  </ol>
+  <p>To revoke the key entirely, delete it in your own Anthropic account console — that is your account with Anthropic, which we cannot access.</p>
+
+  <h3>3. Anonymous usage analytics</h3>
+  <p>The app sends anonymous usage statistics to Google Firebase Analytics. That data is <strong>not linked to your identity</strong> — no name, email or phone number — so we cannot look up and delete one specific person's portion of it. Google deletes it automatically after the configured retention period.</p>
+
+  <h3>Need help?</h3>
+  <p>Email: <a href="mailto:ducdv.bk94@gmail.com">ducdv.bk94@gmail.com</a> · See also the <a href="/gplx/">Privacy Policy</a>.</p>
+
+  <footer>
+    <a href="/gplx/">Quyền riêng tư</a>
+    <a href="/gplx/support.html">Hỗ trợ</a>
+    <a href="/gplx/delete-data.html">Xóa dữ liệu</a>
+    <br /><br />Ôn thi GPLX
+  </footer>
+</main>
+</body>
+</html>
