@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #faf9f8;
+    --ink: #1c1b1a;
+    --ink-soft: #5a5754;
+    --accent: #b4472e;
+    --line: #e6e2de;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141312;
+      --ink: #ece9e5;
+      --ink-soft: #aca7a1;
+      --accent: #ff8a65;
+      --line: #332f2c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+  h1 {
+    font-size: 28px;
+    margin: 0 0 6px;
+    letter-spacing: -0.01em;
+  }
+  .updated {
+    color: var(--ink-soft);
+    font-size: 14px;
+    margin: 0 0 20px;
+  }
+  .langbar {
+    font-size: 14px;
+    margin: 0 0 40px;
+    color: var(--ink-soft);
+  }
+  h2 {
+    font-size: 18px;
+    margin: 36px 0 10px;
+    border-top: 1px solid var(--line);
+    padding-top: 28px;
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  h3 {
+    font-size: 15.5px;
+    margin: 24px 0 6px;
+  }
+  p, li { font-size: 15.5px; color: var(--ink); }
+  ul, ol { padding-left: 22px; margin: 10px 0; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); }
+  strong { font-weight: 600; }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-soft);
+    font-size: 13px;
+  }
+  footer a { margin-right: 14px; }
+</style>
+<title>Xoá dữ liệu và tài khoản — Donghua Hub</title>
+<meta name="description" content="Cách xoá tài khoản và dữ liệu Donghua Hub / How to delete your Donghua Hub account and data." />
+</head>
+<body>
+<main>
+  <h1>Xoá dữ liệu và tài khoản</h1>
+  <p class="updated">Donghua Hub: Theo dõi phim · com.ducky.moviesapp.hhtqtv · Cập nhật 24/09/2026 · Last updated September 24, 2026</p>
+  <p class="langbar"><a href="#vi">Tiếng Việt</a> · <a href="#en">English</a></p>
+
+  <h2 id="vi">Tiếng Việt</h2>
+  <p>Donghua Hub <strong>mặc định không có tài khoản</strong>. Tài khoản chỉ tồn tại nếu bạn tự bật Sao lưu tự động và đăng nhập bằng Google. Dưới đây là cách xoá cả hai. Việc xoá là miễn phí, có hiệu lực ngay và <strong>không thể hoàn tác</strong>.</p>
+
+  <h3>1. Xoá tài khoản và bản sao lưu trên máy chủ</h3>
+  <p>Chỉ cần làm nếu bạn đã từng bật Sao lưu tự động.</p>
+  <ol>
+    <li>Mở ứng dụng, vào tab <strong>Tài khoản</strong>.</li>
+    <li>Trong nhóm <strong>Dữ liệu của tôi</strong>, bấm <strong>Sao lưu tự động</strong>.</li>
+    <li>Trong bảng hiện lên, chọn <strong>Xoá tài khoản và bản sao lưu</strong>.</li>
+    <li>Đọc hộp thoại xác nhận rồi bấm nút xoá.</li>
+  </ol>
+  <p>Thao tác này xoá tài liệu sao lưu <code>list_backups/{UID}</code> trên Cloud Firestore trước, sau đó xoá luôn tài khoản đăng nhập. Không còn bản sao nào được giữ lại. Nếu Firebase báo cần đăng nhập lại (vì phiên đăng nhập đã cũ), ứng dụng sẽ tự cho bạn đăng nhập lại rồi thử lại một lần.</p>
+  <p><strong>Danh sách trên máy bạn được giữ nguyên</strong> — nó không phải dữ liệu tài khoản, và xoá tài khoản không có nghĩa là bạn muốn mất luôn tiến độ đã xem. Muốn xoá nốt, làm tiếp bước 2.</p>
+
+  <h3>2. Xoá dữ liệu trên thiết bị</h3>
+  <p>Danh sách theo dõi, tiến độ tập, cài đặt và bộ nhớ đệm đều nằm trên máy bạn.</p>
+  <ul>
+    <li><strong>Gỡ cài đặt ứng dụng</strong> — xoá toàn bộ dữ liệu cục bộ trên thiết bị đó.</li>
+    <li>Hoặc, nếu muốn giữ ứng dụng: <strong>Cài đặt Android → Ứng dụng → Donghua Hub → Bộ nhớ → Xoá dữ liệu</strong>.</li>
+    <li>Chỉ muốn thu hồi dung lượng mà vẫn giữ danh sách: <strong>Tài khoản → Ứng dụng → Xoá bộ nhớ đệm</strong>.</li>
+  </ul>
+  <p>Muốn giữ lại một bản trước khi xoá, dùng <strong>Tài khoản → Dữ liệu của tôi → Sao lưu danh sách</strong> để xuất ra file.</p>
+
+  <h3>Nếu bạn không còn cài ứng dụng</h3>
+  <p>Gửi email tới <a href="mailto:ducdv.bk94@gmail.com?subject=Donghua%20Hub%20account%20deletion%20request">ducdv.bk94@gmail.com</a> <strong>từ chính địa chỉ email của tài khoản Google bạn đã dùng để đăng nhập</strong>, tiêu đề "Donghua Hub account deletion request". Yêu cầu sẽ được xác minh và xử lý trong vòng 30 ngày, và tôi sẽ trả lời xác nhận.</p>
+
+  <h3>Những gì bị xoá và những gì không</h3>
+  <ul>
+    <li><strong>Bị xoá:</strong> tài liệu sao lưu danh sách trên Firestore, và tài khoản đăng nhập (email cùng mã người dùng).</li>
+    <li><strong>Không có để mà xoá:</strong> chúng tôi không lưu tên, số điện thoại, vị trí, lịch sử xem hay bất kỳ hồ sơ nào khác.</li>
+    <li><strong>Không bị đụng tới:</strong> dữ liệu trên máy bạn (xem bước 2), và tài khoản Google của bạn — chỉ quyền truy cập của ứng dụng này bị gỡ, tài khoản Google vẫn nguyên.</li>
+  </ul>
+  <p>Không có tuỳ chọn xoá một phần hay tạm ngưng, và không có bản sao lưu nào của tài khoản đã xoá được giữ lại.</p>
+
+  <h3>Thông tin thêm</h3>
+  <p>Xem <a href="/donghua-hub/">Chính sách quyền riêng tư</a> hoặc <a href="/donghua-hub/support.html">trang Hỗ trợ</a>.</p>
+
+  <h2 id="en">English</h2>
+  <p>Donghua Hub has <strong>no account by default</strong>. An account exists only if you turned on Automatic backup and signed in with Google. Here is how to delete both. Deletion is free, immediate and <strong>irreversible</strong>.</p>
+
+  <h3>1. Delete your account and its server-side backup</h3>
+  <p>Only needed if you ever turned on Automatic backup.</p>
+  <ol>
+    <li>Open the app and go to the <strong>Account</strong> tab.</li>
+    <li>Under <strong>My data</strong>, tap <strong>Automatic backup</strong>.</li>
+    <li>In the sheet that appears, choose <strong>Delete account and backup</strong>.</li>
+    <li>Read the confirmation dialog, then tap the delete button.</li>
+  </ol>
+  <p>This deletes the backup document at <code>list_backups/{UID}</code> in Cloud Firestore first, then the authentication account itself. No copies are retained. If Firebase requires a recent sign-in because your session is stale, the app re-runs sign-in and retries once.</p>
+  <p><strong>The list on your device is deliberately left alone</strong> — it is not account data, and deleting an account does not mean you wanted to lose your watch progress. To remove that too, continue with step 2.</p>
+
+  <h3>2. Delete the data on your device</h3>
+  <p>Your list, episode progress, settings and caches all live on your phone.</p>
+  <ul>
+    <li><strong>Uninstall the app</strong> — this removes all local data on that device.</li>
+    <li>Or, to keep the app: <strong>Android Settings → Apps → Donghua Hub → Storage → Clear data</strong>.</li>
+    <li>To reclaim space while keeping your list: <strong>Account → App → Clear cache</strong>.</li>
+  </ul>
+  <p>To keep a copy first, use <strong>Account → My data → Back up my list</strong> to export a file.</p>
+
+  <h3>If you no longer have the app installed</h3>
+  <p>Email <a href="mailto:ducdv.bk94@gmail.com?subject=Donghua%20Hub%20account%20deletion%20request">ducdv.bk94@gmail.com</a> <strong>from the Google account address you signed in with</strong>, with the subject "Donghua Hub account deletion request". The request will be verified and handled within 30 days, and confirmed by reply.</p>
+
+  <h3>What is deleted, and what is not</h3>
+  <ul>
+    <li><strong>Deleted:</strong> the Firestore list-backup document, and the authentication account (email address and user id).</li>
+    <li><strong>Never held in the first place:</strong> we store no name, phone number, location, watch history or any other profile.</li>
+    <li><strong>Not touched:</strong> the data on your device (see step 2), and your Google account itself — only this app's access is removed.</li>
+  </ul>
+  <p>There is no partial deletion or deactivation option, and no backups of deleted accounts are kept.</p>
+
+  <h3>More information</h3>
+  <p>See the <a href="/donghua-hub/">Privacy Policy</a> or the <a href="/donghua-hub/support.html">Support page</a>.</p>
+
+  <footer>
+    <a href="/donghua-hub/">Quyền riêng tư</a>
+    <a href="/donghua-hub/support.html">Hỗ trợ</a>
+    <a href="/donghua-hub/delete-data.html">Xoá dữ liệu &amp; tài khoản</a>
+    <br /><br />Donghua Hub
+  </footer>
+</main>
+</body>
+</html>

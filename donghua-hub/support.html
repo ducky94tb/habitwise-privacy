@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #faf9f8;
+    --ink: #1c1b1a;
+    --ink-soft: #5a5754;
+    --accent: #b4472e;
+    --line: #e6e2de;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141312;
+      --ink: #ece9e5;
+      --ink-soft: #aca7a1;
+      --accent: #ff8a65;
+      --line: #332f2c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+  h1 {
+    font-size: 28px;
+    margin: 0 0 6px;
+    letter-spacing: -0.01em;
+  }
+  .updated {
+    color: var(--ink-soft);
+    font-size: 14px;
+    margin: 0 0 20px;
+  }
+  .langbar {
+    font-size: 14px;
+    margin: 0 0 40px;
+    color: var(--ink-soft);
+  }
+  h2 {
+    font-size: 18px;
+    margin: 36px 0 10px;
+    border-top: 1px solid var(--line);
+    padding-top: 28px;
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  h3 {
+    font-size: 15.5px;
+    margin: 24px 0 6px;
+  }
+  p, li { font-size: 15.5px; color: var(--ink); }
+  ul, ol { padding-left: 22px; margin: 10px 0; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); }
+  strong { font-weight: 600; }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-soft);
+    font-size: 13px;
+  }
+  footer a { margin-right: 14px; }
+</style>
+<title>Hỗ trợ — Donghua Hub</title>
+<meta name="description" content="Trang hỗ trợ ứng dụng Donghua Hub / Support page for the Donghua Hub app." />
+</head>
+<body>
+<main>
+  <h1>Hỗ trợ</h1>
+  <p class="updated">Donghua Hub: Theo dõi phim · Cập nhật 24/09/2026 · Last updated September 24, 2026</p>
+  <p class="langbar"><a href="#vi">Tiếng Việt</a> · <a href="#en">English</a></p>
+
+  <h2 id="vi">Tiếng Việt</h2>
+
+  <h3>Liên hệ</h3>
+  <p>Mọi câu hỏi, báo lỗi hay góp ý tính năng, gửi email tới <a href="mailto:ducdv.bk94@gmail.com">ducdv.bk94@gmail.com</a>. Khi báo lỗi, bạn nên ghi rõ dòng máy, phiên bản Android, phiên bản ứng dụng (xem ở cuối tab <strong>Tài khoản</strong>) và các bước tái hiện để tôi xử lý nhanh hơn.</p>
+
+  <h3>Câu hỏi thường gặp</h3>
+  <ul>
+    <li><strong>Ứng dụng có xem phim trực tiếp được không?</strong> Không. Đây là ứng dụng <em>theo dõi</em>: nó giúp bạn nhớ đang xem tới tập mấy và nhắc khi có tập mới. Nút xem sẽ mở trang hoặc ứng dụng chính thức của nhà cung cấp. Ứng dụng không lưu trữ và không phát video.</li>
+    <li><strong>Vì sao bấm vào tập lại mở sang ứng dụng khác?</strong> Thứ tự là: <strong>ứng dụng của chính nhà cung cấp</strong> nếu bạn đã cài (WeTV, iQIYI…), rồi tới <strong>Cốc Cốc</strong>, cuối cùng là trình duyệt mặc định. Ưu tiên ứng dụng nhà cung cấp vì bạn đã đăng nhập sẵn ở đó, trình phát là trình phát gốc, và WeTV cùng iQIYI có tải về xem offline chính thức. Muốn hiểu rõ hoặc đổi lại lựa chọn: <strong>Tài khoản → Ứng dụng → Mở link bằng</strong>.</li>
+    <li><strong>Vì sao có phim bấm vào tập lại mở trang phim chứ không đúng tập?</strong> Chỉ khoảng một nửa danh mục có liên kết theo từng tập — chủ yếu do Crunchyroll cung cấp. Tencent, WeTV và Bilibili không công bố liên kết từng tập, nên với các phim đó ứng dụng mở trang phim và nói rõ đó là nhà cung cấp nào, thay vì đưa bạn tới một địa chỉ đoán mò.</li>
+    <li><strong>Tôi không nhận được thông báo tập mới.</strong> Kiểm tra theo thứ tự: (1) quyền <strong>Thông báo</strong> của ứng dụng trong cài đặt hệ thống — nếu bạn đã từ chối hai lần, Android không cho ứng dụng hỏi lại, phải bật thủ công; (2) hàng <strong>Thông báo tập mới</strong> trong tab Tài khoản — nếu nó hiện màu đỏ, bấm vào để mở thẳng trang cài đặt tương ứng; (3) quyền <strong>báo thức chính xác</strong>, vì nếu thiếu thì hệ điều hành từ chối toàn bộ lịch nhắc.</li>
+    <li><strong>Vì sao chỉ vài phim được nhắc?</strong> Bản miễn phí nhắc <strong>5 phim</strong> bạn cập nhật gần nhất, trong số các phim đang ở trạng thái đang xem và còn đang phát sóng. Hàng <strong>Thông báo tập mới</strong> hiển thị con số thực tế hệ điều hành đã nhận, không phải con số dự định.</li>
+    <li><strong>Đánh dấu tập hoạt động thế nào?</strong> Theo kiểu mốc cao nhất: tích vào tập 5 nghĩa là bạn đã xem hết tới tập 5, giống cách AniList và MAL ghi nhận. Tích vào một phim chưa theo dõi thì phim đó tự được thêm vào danh sách.</li>
+    <li><strong>Đổi điện thoại thì sao?</strong> Hai cách. Thủ công: <strong>Tài khoản → Dữ liệu của tôi → Sao lưu danh sách</strong> để tạo file, giữ file đó lại, rồi dùng <strong>Khôi phục từ file</strong> trên máy mới. Tự động: bật <strong>Sao lưu tự động</strong> và đăng nhập Google, sau đó chỉ cần đăng nhập lại trên máy mới.</li>
+    <li><strong>Khôi phục có xoá mất dữ liệu đang có không?</strong> Không. Khôi phục <strong>không bao giờ xoá</strong>. Phim có trên máy mà không có trong file thì được giữ nguyên. Phim có ở cả hai nơi thì bản cập nhật gần hơn thắng. Kết quả luôn được báo lại (thêm / cập nhật / không đổi) chứ không âm thầm áp dụng.</li>
+    <li><strong>Sao lưu tự động chạy lúc nào?</strong> Khi ứng dụng đang mở: lúc khởi động và vài giây sau mỗi thay đổi. Không có tiến trình chạy nền, nên nó <strong>không thay thế</strong> việc thỉnh thoảng xuất ra file — nếu điện thoại hỏng lúc app đang đóng thì thay đổi cuối chưa kịp lên.</li>
+    <li><strong>"Cần ghép phim" là gì?</strong> Khi nâng cấp từ bản cũ, ứng dụng chuyển mục yêu thích và lịch sử xem cũ sang danh sách mới. Phim nào không ghép được chắc chắn thì không bị đoán bừa mà đưa vào mục này để bạn tự chọn. Mục này chỉ hiện khi còn phim đang chờ.</li>
+    <li><strong>Ứng dụng có những ngôn ngữ nào?</strong> Chín: Tiếng Việt, English, 简体中文, 繁體中文, 日本語, Français, Deutsch, Español, Русский. Đổi ở <strong>Tài khoản → Hiển thị → Ngôn ngữ</strong>.</li>
+    <li><strong>Ứng dụng chiếm nhiều dung lượng.</strong> Dùng <strong>Tài khoản → Ứng dụng → Xoá bộ nhớ đệm</strong>. Thao tác này chỉ xoá ảnh bìa và phản hồi API đã lưu tạm; <strong>danh sách theo dõi của bạn không bị đụng tới</strong>.</li>
+    <li><strong>Thông tin phim sai hoặc thiếu.</strong> Dữ liệu phim lấy từ AniList và TMDB. Nếu tên, ảnh bìa hay lịch chiếu sai, thường là sai từ nguồn — bạn có thể sửa trực tiếp trên AniList, và ứng dụng sẽ nhận bản sửa sau khi bộ nhớ đệm hết hạn.</li>
+    <li><strong>Làm sao xoá dữ liệu hoặc tài khoản?</strong> Xem <a href="/donghua-hub/delete-data.html">trang Xoá dữ liệu và tài khoản</a>.</li>
+  </ul>
+
+  <h3>Quyền riêng tư</h3>
+  <p>Xem <a href="/donghua-hub/">Chính sách quyền riêng tư</a> để biết dữ liệu nào được xử lý và vì sao.</p>
+
+  <h2 id="en">English</h2>
+
+  <h3>Contact</h3>
+  <p>Questions, bug reports or feature requests — email <a href="mailto:ducdv.bk94@gmail.com">ducdv.bk94@gmail.com</a>. For bug reports, please include your device model, Android version, the app version (at the bottom of the <strong>Account</strong> tab) and the steps to reproduce.</p>
+
+  <h3>Common questions</h3>
+  <ul>
+    <li><strong>Can I watch episodes in the app?</strong> No. This is a <em>tracker</em>: it remembers which episode you are on and tells you when a new one airs. The watch button opens the provider's own official page or app. The app hosts and plays no video.</li>
+    <li><strong>Why does tapping an episode open a different app?</strong> The order is: <strong>the provider's own app</strong> if you have it (WeTV, iQIYI and so on), then <strong>Cốc Cốc</strong>, then your default browser. The provider's app comes first because you are already signed in there, the player is native, and WeTV and iQIYI offer official offline downloads. To see the explanation or reset your choice: <strong>Account → App → Open links with</strong>.</li>
+    <li><strong>Why do some titles open the series page instead of the episode?</strong> Only about half the catalogue has per-episode links, almost all supplied by Crunchyroll. Tencent, WeTV and Bilibili publish none, so for those titles the app opens the series page and names the provider rather than sending you to a guessed address.</li>
+    <li><strong>I am not getting episode alerts.</strong> Check, in order: (1) the app's <strong>Notifications</strong> permission in your system settings — if you declined twice, Android will not let the app ask again and you must enable it manually; (2) the <strong>Episode alerts</strong> row in the Account tab — if it is red, tap it to jump straight to the right settings screen; (3) the <strong>exact alarm</strong> permission, without which the OS refuses every scheduled reminder.</li>
+    <li><strong>Why are only a few titles alerted?</strong> The free tier alerts the <strong>5 most recently updated</strong> titles among those you are watching that are still airing. The <strong>Episode alerts</strong> row shows the count the OS actually accepted, not the count that was intended.</li>
+    <li><strong>How does marking episodes work?</strong> As a high-water mark: ticking episode 5 means you have watched through episode 5, the same model AniList and MAL use. Ticking a box on a title you are not tracking adds it to your list.</li>
+    <li><strong>What happens when I change phones?</strong> Two ways. Manually: <strong>Account → My data → Back up my list</strong> to produce a file, keep it, then use <strong>Restore from a file</strong> on the new device. Automatically: turn on <strong>Automatic backup</strong> and sign in with Google, then just sign in again on the new phone.</li>
+    <li><strong>Does restoring overwrite what I already have?</strong> No. A restore <strong>never deletes</strong>. A title on the phone but not in the file is left alone. For a title in both, the more recently updated version wins. The outcome is always reported (added / updated / unchanged) rather than applied silently.</li>
+    <li><strong>When does automatic backup run?</strong> While the app is open: at startup and a few seconds after each change. There is no background worker, so it is <strong>not a substitute</strong> for the occasional file export — if the phone dies while the app is closed, the last changes did not make it up.</li>
+    <li><strong>What is "Needs matching"?</strong> When upgrading from an older version, the app migrates your old favourites and watch history into the new list. Anything it cannot match with confidence is not guessed at — it is put here for you to resolve. The row appears only while something is waiting.</li>
+    <li><strong>Which languages are supported?</strong> Nine: English, Tiếng Việt, 简体中文, 繁體中文, 日本語, Français, Deutsch, Español, Русский. Change it under <strong>Account → Display → Language</strong>.</li>
+    <li><strong>The app is using a lot of storage.</strong> Use <strong>Account → App → Clear cache</strong>. That clears only cached cover images and API responses; <strong>your list is not touched</strong>.</li>
+    <li><strong>A title's information is wrong or missing.</strong> Catalogue data comes from AniList and TMDB. If a title, cover or schedule is wrong, it is usually wrong at the source — you can correct it on AniList directly, and the app will pick up the change once its cache expires.</li>
+    <li><strong>How do I delete my data or account?</strong> See the <a href="/donghua-hub/delete-data.html">data and account deletion page</a>.</li>
+  </ul>
+
+  <h3>Privacy</h3>
+  <p>See the <a href="/donghua-hub/">Privacy Policy</a> for what data is processed and why.</p>
+
+  <footer>
+    <a href="/donghua-hub/">Quyền riêng tư</a>
+    <a href="/donghua-hub/support.html">Hỗ trợ</a>
+    <a href="/donghua-hub/delete-data.html">Xoá dữ liệu &amp; tài khoản</a>
+    <br /><br />Donghua Hub
+  </footer>
+</main>
+</body>
+</html>
