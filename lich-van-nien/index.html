@@ -80,32 +80,44 @@
 <body>
 <main>
   <h1>Chính sách quyền riêng tư</h1>
-  <p class="updated">Lịch Vạn Niên (Lich Van Nien) · Cập nhật 02/10/2026 · Last updated October 2, 2026</p>
+  <p class="updated">Lịch Vạn Niên (Lich Van Nien) · Cập nhật 08/10/2026 · Last updated October 8, 2026</p>
   <p class="langbar"><a href="#vi">Tiếng Việt</a> · <a href="#en">English</a></p>
 
   <h2 id="vi">Tiếng Việt</h2>
-  <p><strong>Lịch Vạn Niên</strong> ("ứng dụng") do Đinh Văn Đức phát hành. Ứng dụng không có máy chủ riêng: dữ liệu của bạn nằm trên máy bạn.</p>
+  <p><strong>Lịch Vạn Niên</strong> ("ứng dụng") do Đinh Văn Đức phát hành. Mặc định, dữ liệu của bạn chỉ nằm trên máy bạn. Chỉ khi bạn tự bật <strong>Đồng bộ dữ liệu</strong>, sự kiện của bạn mới được lưu lên máy chủ.</p>
 
-  <h3>Dữ liệu chúng tôi KHÔNG thu thập</h3>
+  <h3>Khi không dùng Đồng bộ dữ liệu</h3>
   <ul>
-    <li>Ứng dụng <strong>không yêu cầu tài khoản, không đăng nhập</strong>.</li>
-    <li>Sinh nhật, ngày giỗ, ngày kỷ niệm và cài đặt của bạn được lưu <strong>cục bộ trên thiết bị</strong> và <strong>không được gửi</strong> tới bất kỳ máy chủ nào của chúng tôi.</li>
-    <li>Chúng tôi không thu thập tên, email, số điện thoại hay danh bạ, và không dùng công cụ phân tích (analytics).</li>
+    <li>Không cần tài khoản, không đăng nhập.</li>
+    <li>Sinh nhật, ngày giỗ, sự kiện, ngày kỷ niệm và cài đặt được lưu <strong>cục bộ trên thiết bị</strong> và <strong>không được gửi</strong> tới máy chủ nào của chúng tôi.</li>
+    <li>Chúng tôi không thu thập tên, số điện thoại hay danh bạ, và không dùng công cụ phân tích (analytics).</li>
   </ul>
 
-  <h3>Dữ liệu được xử lý</h3>
+  <h3>Đồng bộ dữ liệu (tùy chọn)</h3>
+  <p>Nếu bạn đăng nhập trong <strong>Mở rộng → Đồng bộ dữ liệu</strong>:</p>
+  <ul>
+    <li><strong>Email</strong> của bạn được dùng để đăng nhập (qua liên kết gửi tới email, không có mật khẩu).</li>
+    <li>Các sự kiện bạn lưu — tên, loại (sinh nhật, ngày giỗ, sự kiện, ngày kỷ niệm), ngày dương/âm, ghi chú và thiết lập nhắc nhở — được lưu trên <a href="https://supabase.com">Supabase</a> (máy chủ tại Tokyo, Nhật Bản) để khôi phục khi cài lại ứng dụng hoặc đổi máy.</li>
+    <li>Dữ liệu này gắn với email của bạn, chỉ tài khoản của bạn đọc được (được bảo vệ bằng phân quyền theo từng người dùng), không bán, không dùng cho quảng cáo và không chia sẻ với bên thứ ba nào khác.</li>
+    <li>Dịch vụ đăng nhập này dùng chung với ứng dụng HabitWise của cùng nhà phát triển: nếu bạn dùng cả hai với cùng một email, đó là một tài khoản đăng nhập, nhưng dữ liệu của mỗi ứng dụng được lưu riêng.</li>
+  </ul>
+
+  <h3>Dữ liệu khác được xử lý</h3>
   <ol>
-    <li><strong>Vị trí và thời tiết (tùy chọn):</strong> nếu bạn cho phép truy cập vị trí, ứng dụng gửi tọa độ tới <a href="https://open-meteo.com">Open-Meteo</a> qua HTTPS để lấy dự báo thời tiết nơi bạn ở. Nếu bạn tự chọn thành phố, tên bạn tìm kiếm được gửi tới dịch vụ tìm địa danh của Open-Meteo. Vị trí không được lưu hay gửi đi nơi nào khác. Bạn có thể từ chối quyền vị trí và chọn thành phố trong <strong>Cài đặt</strong>.</li>
-    <li><strong>Quảng cáo:</strong> ứng dụng hiển thị banner Google AdMob. Google có thể thu thập mã thiết bị/quảng cáo và dữ liệu hiển thị quảng cáo theo <a href="https://policies.google.com/privacy">chính sách quyền riêng tư của Google</a> và <a href="https://policies.google.com/technologies/partner-sites">cách Google dùng dữ liệu từ ứng dụng đối tác</a>. Trên iOS, ứng dụng không dùng App Tracking Transparency và quảng cáo được phục vụ ở chế độ không cá nhân hóa. Trên Android, bạn có thể quản lý quảng cáo cá nhân hóa trong cài đặt Google của thiết bị.</li>
-    <li><strong>Nhắc nhở:</strong> nhắc sinh nhật, ngày giỗ là thông báo cục bộ do máy bạn lên lịch; không dữ liệu nào rời khỏi thiết bị.</li>
+    <li><strong>Vị trí và thời tiết (tùy chọn):</strong> nếu bạn cho phép truy cập vị trí, ứng dụng gửi tọa độ tới <a href="https://open-meteo.com">Open-Meteo</a> qua HTTPS để lấy dự báo thời tiết; nếu bạn tự chọn thành phố, tên bạn tìm kiếm được gửi tới dịch vụ tìm địa danh của Open-Meteo. Vị trí không được lưu lại. Ứng dụng chỉ dùng vị trí khi đang mở, không theo dõi vị trí khi chạy nền.</li>
+    <li><strong>Quảng cáo:</strong> ứng dụng hiển thị banner Google AdMob. Google có thể thu thập mã thiết bị/quảng cáo, vị trí gần đúng (từ địa chỉ IP) và dữ liệu hiển thị quảng cáo theo <a href="https://policies.google.com/privacy">chính sách quyền riêng tư của Google</a> và <a href="https://policies.google.com/technologies/partner-sites">cách Google dùng dữ liệu từ ứng dụng đối tác</a>. Trên iOS, ứng dụng không dùng App Tracking Transparency và quảng cáo được phục vụ ở chế độ không cá nhân hóa. Trên Android, bạn có thể quản lý quảng cáo cá nhân hóa trong cài đặt Google của thiết bị.</li>
+    <li><strong>Xuất sang lịch hệ thống (tùy chọn):</strong> nếu bạn cho phép truy cập Lịch, ứng dụng ghi các sự kiện của bạn vào một lịch riêng tên "Lịch Vạn Niên" trên máy. Ứng dụng không đọc các lịch khác và không gửi dữ liệu lịch đi đâu.</li>
+    <li><strong>Thông báo:</strong> nhắc sinh nhật, ngày giỗ và "ngày tốt hôm nay" là thông báo cục bộ do máy bạn lên lịch.</li>
     <li><strong>La bàn hướng xuất hành:</strong> dùng cảm biến la bàn của máy, xử lý ngay trên thiết bị.</li>
-    <li><strong>Sao lưu:</strong> tính năng <strong>Sao lưu &amp; khôi phục</strong> tạo một tệp mà bạn tự chọn nơi lưu hoặc chia sẻ; chúng tôi không nhận bản sao nào.</li>
+    <li><strong>Sao lưu và chia sẻ:</strong> tệp sao lưu và ảnh chia sẻ ngày hôm nay chỉ được tạo khi bạn yêu cầu, và chỉ đi tới nơi bạn chọn lưu hoặc chia sẻ.</li>
+    <li><strong>Đánh giá và cập nhật:</strong> ứng dụng có thể hiện hộp thoại đánh giá của App Store/Google Play, và trên Android kiểm tra bản cập nhật qua Google Play. Các hộp thoại này do Apple/Google xử lý.</li>
   </ol>
 
   <h3>Xóa dữ liệu</h3>
   <ul>
-    <li>Xóa từng sự kiện ngay trong ứng dụng, hoặc gỡ ứng dụng để xóa toàn bộ dữ liệu trên máy.</li>
-    <li>Tệp sao lưu bạn đã xuất nằm ở nơi bạn lưu; hãy tự xóa tệp đó nếu không cần nữa.</li>
+    <li>Dữ liệu trên máy: xóa từng sự kiện trong ứng dụng, hoặc gỡ ứng dụng.</li>
+    <li>Dữ liệu đồng bộ và tài khoản: <strong>Mở rộng → Đồng bộ dữ liệu → Xóa tài khoản</strong>.</li>
+    <li>Hướng dẫn chi tiết và cách yêu cầu xóa qua email: <a href="/lich-van-nien/delete-data.html">trang Xóa dữ liệu</a>.</li>
   </ul>
 
   <h3>Trẻ em</h3>
@@ -118,28 +130,40 @@
   <p>Email: <a href="mailto:ducdv.bk94@gmail.com">ducdv.bk94@gmail.com</a></p>
 
   <h2 id="en">English</h2>
-  <p><strong>Lich Van Nien</strong> ("the app") is published by Duc Dinh Van. The app has no backend of its own: your data stays on your device.</p>
+  <p><strong>Lich Van Nien</strong> ("the app") is published by Duc Dinh Van. By default your data stays on your device. Your events are stored on a server only if you turn on <strong>Cloud sync</strong> yourself.</p>
 
-  <h3>Data we do NOT collect</h3>
+  <h3>Without Cloud sync</h3>
   <ul>
     <li>No account, no sign-in.</li>
-    <li>Your birthdays, death anniversaries ("ngày giỗ"), other anniversaries and settings are stored <strong>locally on your device</strong> and are <strong>never sent</strong> to any server we operate.</li>
-    <li>We do not collect your name, email, phone number or contacts, and the app has no analytics SDK.</li>
+    <li>Your birthdays, death anniversaries ("ngày giỗ"), events, anniversaries and settings are stored <strong>locally on your device</strong> and are <strong>never sent</strong> to any server we operate.</li>
+    <li>We do not collect your name, phone number or contacts, and the app has no analytics SDK.</li>
   </ul>
 
-  <h3>Data that is processed</h3>
+  <h3>Cloud sync (optional)</h3>
+  <p>If you sign in under <strong>Mở rộng (More) → Đồng bộ dữ liệu (Cloud sync)</strong>:</p>
+  <ul>
+    <li>Your <strong>email address</strong> is used to sign in (via a link sent to your email; there is no password).</li>
+    <li>The events you save — name, type (birthday, death anniversary, event, anniversary), solar/lunar date, note and reminder setting — are stored with <a href="https://supabase.com">Supabase</a> (servers in Tokyo, Japan) so they can be restored after a reinstall or on a new device.</li>
+    <li>This data is linked to your email, readable only by your own account (enforced by per-user access rules), never sold, never used for advertising, and not shared with any other third party.</li>
+    <li>The sign-in service is shared with HabitWise, another app by the same developer: if you use both with the same email, that is one login, but each app's data is stored separately.</li>
+  </ul>
+
+  <h3>Other data that is processed</h3>
   <ol>
-    <li><strong>Location and weather (optional):</strong> if you grant location permission, the app sends your coordinates to <a href="https://open-meteo.com">Open-Meteo</a> over HTTPS to fetch your local forecast. If you pick a city manually, your search text is sent to Open-Meteo's geocoding service. Your location is not stored or sent anywhere else. You can decline the permission and choose a city in <strong>Settings</strong> instead.</li>
-    <li><strong>Advertising:</strong> the app shows Google AdMob banners. Google may collect device/advertising identifiers and ad-delivery data per <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">how Google uses data from partner apps</a>. On iOS the app does not use App Tracking Transparency and serves non-personalized ads. On Android you can manage ad personalization in your device's Google settings.</li>
-    <li><strong>Reminders:</strong> birthday and anniversary reminders are local notifications scheduled on your device; no data leaves it.</li>
+    <li><strong>Location and weather (optional):</strong> if you grant location permission, the app sends your coordinates to <a href="https://open-meteo.com">Open-Meteo</a> over HTTPS to fetch your local forecast; if you pick a city manually, your search text is sent to Open-Meteo's geocoding service. Your location is not stored. The app only uses location while it is open and never tracks it in the background.</li>
+    <li><strong>Advertising:</strong> the app shows Google AdMob banners. Google may collect device/advertising identifiers, approximate location (from your IP address) and ad-delivery data per <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">how Google uses data from partner apps</a>. On iOS the app does not use App Tracking Transparency and serves non-personalized ads. On Android you can manage ad personalization in your device's Google settings.</li>
+    <li><strong>Export to the system calendar (optional):</strong> if you grant calendar access, the app writes your events into a separate "Lịch Vạn Niên" calendar on your device. It does not read your other calendars and never sends calendar data anywhere.</li>
+    <li><strong>Notifications:</strong> birthday, death-anniversary and "good day today" reminders are local notifications scheduled on your device.</li>
     <li><strong>Travel-direction compass:</strong> uses your device's compass sensor, processed on the device.</li>
-    <li><strong>Backup:</strong> <strong>Backup &amp; restore</strong> creates a file that you choose where to save or share; we never receive a copy.</li>
+    <li><strong>Backup and sharing:</strong> backup files and the "share today" image are created only when you ask, and only go where you choose to save or share them.</li>
+    <li><strong>Ratings and updates:</strong> the app may show the App Store/Google Play rating dialog and, on Android, check Google Play for updates. Apple/Google handle these dialogs.</li>
   </ol>
 
   <h3>Data deletion</h3>
   <ul>
-    <li>Delete individual events inside the app, or uninstall the app to remove all data from your device.</li>
-    <li>Backup files you exported live wherever you saved them; delete them yourself if no longer needed.</li>
+    <li>On-device data: delete individual events in the app, or uninstall the app.</li>
+    <li>Synced data and your account: <strong>Mở rộng → Đồng bộ dữ liệu → Xóa tài khoản</strong> (Delete account).</li>
+    <li>Step-by-step instructions and email requests: <a href="/lich-van-nien/delete-data.html">data deletion page</a>.</li>
   </ul>
 
   <h3>Children</h3>
@@ -154,6 +178,7 @@
   <footer>
     <a href="/lich-van-nien/">Quyền riêng tư</a>
     <a href="/lich-van-nien/support.html">Hỗ trợ</a>
+    <a href="/lich-van-nien/delete-data.html">Xóa dữ liệu</a>
     <br /><br />Lịch Vạn Niên
   </footer>
 </main>
