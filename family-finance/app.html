@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f7faf9;
+    --ink: #1a2422;
+    --ink-soft: #55625f;
+    --accent: #00695c;
+    --line: #dfe7e5;
+    --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111917;
+      --ink: #e7eeec;
+      --ink-soft: #a3b3af;
+      --accent: #4db6ac;
+      --line: #2a3633;
+      --card: #18221f;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+  .hero { display: flex; gap: 22px; align-items: center; margin: 0 0 12px; }
+  .hero img { width: 88px; height: 88px; border-radius: 20px; flex: none; }
+  h1 { font-size: 30px; margin: 0; letter-spacing: -0.01em; line-height: 1.25; }
+  .tagline { color: var(--ink-soft); font-size: 17px; margin: 4px 0 0; }
+  .langbar { font-size: 14px; margin: 18px 0 36px; color: var(--ink-soft); }
+  .shots {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin: 0 0 8px;
+  }
+  .shots img {
+    width: 100%;
+    height: auto;
+    border-radius: 22px;
+    border: 1px solid var(--line);
+    background: var(--card);
+  }
+  .note { color: var(--ink-soft); font-size: 13px; margin: 0 0 8px; }
+  h2 {
+    font-size: 20px;
+    margin: 44px 0 10px;
+    border-top: 1px solid var(--line);
+    padding-top: 32px;
+  }
+  h3 { font-size: 16px; margin: 22px 0 4px; }
+  p, li { font-size: 15.5px; color: var(--ink); max-width: 680px; }
+  ul { padding-left: 22px; margin: 6px 0; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); }
+  strong { font-weight: 600; }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-soft);
+    font-size: 13px;
+  }
+  footer a { margin-right: 14px; }
+  @media (max-width: 560px) {
+    .shots { grid-template-columns: repeat(3, 70%); overflow-x: auto; scroll-snap-type: x mandatory; }
+    .shots img { scroll-snap-align: start; }
+    h1 { font-size: 25px; }
+    .hero { gap: 16px; }
+    .hero img { width: 64px; height: 64px; border-radius: 15px; }
+    .tagline { font-size: 15px; }
+  }
+</style>
+<title>Tài chính Gia đình — Family Finance</title>
+<meta name="description" content="Sổ thu chi chung cho hai vợ chồng: tài khoản, ngân sách, mục tiêu, tài sản ròng. One shared money ledger for a couple." />
+</head>
+<body>
+<main>
+  <div class="hero">
+    <img src="/family-finance/img/icon.png" alt="Biểu tượng ứng dụng Tài chính Gia đình" />
+    <div>
+      <h1>Tài chính Gia đình</h1>
+      <p class="tagline">Sổ thu chi chung cho hai vợ chồng · One shared ledger for the two of you</p>
+    </div>
+  </div>
+  <p class="langbar"><a href="#vi">Tiếng Việt</a> · <a href="#en">English</a></p>
+
+  <div class="shots">
+    <img src="/family-finance/img/01_tong_quan.jpg" alt="Màn hình Tổng quan: tổng tiền của gia đình, tài sản ròng, cảnh báo ngân sách và dòng tiền trong tháng" loading="lazy" />
+    <img src="/family-finance/img/04_bao_cao.jpg" alt="Báo cáo tháng: chi theo danh mục và theo từng thành viên" loading="lazy" />
+    <img src="/family-finance/img/05_ngan_sach.jpg" alt="Ngân sách tháng theo từng danh mục" loading="lazy" />
+  </div>
+  <p class="note">Số liệu trong ảnh là của một gia đình mẫu. · Figures shown are a sample family.</p>
+
+  <h2 id="vi">Tiếng Việt</h2>
+  <p>Tài chính Gia đình là cuốn sổ thu chi chung cho hai vợ chồng. Cả hai cùng ghi, cùng xem, và cùng thấy một con số.</p>
+
+  <h3>Minh bạch hoàn toàn</h3>
+  <ul>
+    <li>Mọi tài khoản và mọi giao dịch của gia đình đều hiện với cả hai người.</li>
+    <li>Mỗi giao dịch ghi rõ ai đã nhập và ai đã sửa; lịch sử thay đổi được giữ lại.</li>
+    <li>Mời vợ hoặc chồng bằng mã mời dùng một lần.</li>
+  </ul>
+
+  <h3>Con số đúng</h3>
+  <ul>
+    <li>Thu, chi và chuyển khoản giữa các tài khoản của gia đình: tiền mặt, ngân hàng, ví điện tử, tiết kiệm.</li>
+    <li>Chuyển tiền giữa hai tài khoản của gia đình không bị tính là thu hay chi.</li>
+    <li>Số dư được tính từ chính các giao dịch. Khi hai người cùng sửa một mục, ứng dụng báo xung đột thay vì ghi đè.</li>
+  </ul>
+
+  <h3>Báo cáo, ngân sách, mục tiêu, tài sản ròng</h3>
+  <ul>
+    <li>Tổng thu, tổng chi, dòng tiền và tỷ lệ tiết kiệm mỗi tháng; chi theo danh mục và theo từng người.</li>
+    <li>Ngân sách tháng theo danh mục, có cảnh báo khi chạm 80% và khi vượt.</li>
+    <li>Mục tiêu tiết kiệm, tài sản và khoản nợ; trả nợ tách riêng gốc và lãi.</li>
+  </ul>
+
+  <h3>Riêng tư</h3>
+  <ul>
+    <li>Chỉ thành viên trong gia đình xem được dữ liệu của gia đình. Khoá ứng dụng bằng vân tay hoặc Face ID.</li>
+    <li>Ứng dụng không kết nối với ngân hàng và không bao giờ hỏi mật khẩu ngân hàng. Dữ liệu tài chính không được bán và không được gửi cho mạng quảng cáo.</li>
+  </ul>
+  <p>Giao diện tiếng Việt. Đơn vị tiền tệ: VND. Dành cho iPhone, iPad và Android.</p>
+
+  <h2 id="en">English</h2>
+  <p>Family Finance is one shared money ledger for a couple. You both record, you both see, and you both get the same number.</p>
+
+  <h3>Full transparency</h3>
+  <ul>
+    <li>Every account and every transaction in the family is visible to both of you.</li>
+    <li>Each transaction shows who entered it and who changed it; the history is kept.</li>
+    <li>Invite your spouse with a single-use invitation code.</li>
+  </ul>
+
+  <h3>The right numbers</h3>
+  <ul>
+    <li>Income, expenses and transfers between the family's accounts: cash, bank, e-wallet, savings.</li>
+    <li>Moving money between two of your own accounts is never counted as income or expense.</li>
+    <li>Balances are derived from the transactions. If you both edit the same item, the app reports a conflict instead of overwriting.</li>
+  </ul>
+
+  <h3>Reports, budgets, goals, net worth</h3>
+  <ul>
+    <li>Monthly income, expense, cash flow and savings rate; spending by category and by person.</li>
+    <li>Monthly budgets per category, with alerts at 80% and when one goes over.</li>
+    <li>Savings goals, assets and debts; loan payments split principal from interest.</li>
+  </ul>
+
+  <h3>Private</h3>
+  <ul>
+    <li>Only members of a family can see that family's data. Lock the app with fingerprint or Face ID.</li>
+    <li>The app never connects to your bank and never asks for a banking password. Financial data is never sold and never sent to an ad network.</li>
+  </ul>
+  <p>The app is in Vietnamese. Currency: VND. For iPhone, iPad and Android.</p>
+
+  <footer>
+    <a href="/family-finance/">Quyền riêng tư · Privacy</a>
+    <a href="/family-finance/support.html">Hỗ trợ · Support</a>
+    <a href="/family-finance/delete-data.html">Xoá dữ liệu &amp; tài khoản · Data deletion</a>
+    <br /><br />Tài chính Gia đình · Family Finance · <a href="mailto:ducdv.bk94@gmail.com">ducdv.bk94@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
