@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f7faf9;
+    --ink: #1a2422;
+    --ink-soft: #55625f;
+    --accent: #00695c;
+    --line: #dfe7e5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111917;
+      --ink: #e7eeec;
+      --ink-soft: #a3b3af;
+      --accent: #4db6ac;
+      --line: #2a3633;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+  h1 {
+    font-size: 28px;
+    margin: 0 0 6px;
+    letter-spacing: -0.01em;
+  }
+  .updated {
+    color: var(--ink-soft);
+    font-size: 14px;
+    margin: 0 0 20px;
+  }
+  .langbar {
+    font-size: 14px;
+    margin: 0 0 40px;
+    color: var(--ink-soft);
+  }
+  h2 {
+    font-size: 18px;
+    margin: 36px 0 10px;
+    border-top: 1px solid var(--line);
+    padding-top: 28px;
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  h3 {
+    font-size: 15.5px;
+    margin: 24px 0 6px;
+  }
+  p, li { font-size: 15.5px; color: var(--ink); }
+  ul, ol { padding-left: 22px; margin: 10px 0; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); }
+  strong { font-weight: 600; }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-soft);
+    font-size: 13px;
+  }
+  footer a { margin-right: 14px; }
+</style>
+<title>Chính sách quyền riêng tư — Family Finance</title>
+<meta name="description" content="Chính sách quyền riêng tư của ứng dụng Tài chính Gia đình / Privacy Policy for the Family Finance app." />
+</head>
+<body>
+<main>
+  <h1>Chính sách quyền riêng tư</h1>
+  <p class="updated">Tài chính Gia đình (Family Finance) · com.duc.familyfinance · Cập nhật 12/11/2026 · Last updated November 12, 2026</p>
+  <p class="langbar"><a href="#vi">Tiếng Việt</a> · <a href="#en">English</a></p>
+
+  <h2 id="vi">Tiếng Việt</h2>
+  <p><strong>Tài chính Gia đình</strong> ("ứng dụng") do Đinh Văn Đức phát hành. Đây là sổ thu chi chung để các thành viên trong một gia đình — thường là hai vợ chồng — cùng ghi chép tài khoản, giao dịch, ngân sách, mục tiêu, tài sản và khoản nợ. Ứng dụng cần một tài khoản, vì dữ liệu phải được chia sẻ giữa các thành viên.</p>
+
+  <h3>Ai xem được dữ liệu của bạn</h3>
+  <p><strong>Mọi thành viên trong gia đình xem được toàn bộ dữ liệu tài chính của gia đình đó</strong>, kể cả tài khoản riêng của nhau. Đây là mục đích của ứng dụng, không phải một tuỳ chọn. Người ngoài gia đình không xem được: quy tắc bảo mật trên máy chủ chặn mọi truy cập từ người không phải thành viên, và mọi thay đổi về tiền đều đi qua máy chủ, nơi quyền thành viên được kiểm tra lại.</p>
+
+  <h3>Dữ liệu được thu thập</h3>
+  <ul>
+    <li><strong>Tài khoản:</strong> email, mật khẩu và tên hiển thị. Việc đăng nhập do Firebase Authentication xử lý; mật khẩu không bao giờ được lưu ở dạng đọc được.</li>
+    <li><strong>Dữ liệu tài chính bạn tự nhập:</strong> tài khoản, giao dịch, danh mục, ngân sách, mục tiêu, tài sản, khoản nợ, và lịch sử thay đổi (ai đã ghi hay sửa gì, vào lúc nào). Lịch sử này chỉ được thêm vào, không bị sửa.</li>
+    <li><strong>Lời mời vào gia đình:</strong> chỉ lưu bản băm của mã mời, không lưu chính mã đó. Mã mời hết hạn, chỉ dùng được một lần và có thể thu hồi.</li>
+    <li><strong>Thiết bị:</strong> mã nhận thông báo đẩy (push token) của điện thoại, gắn với tài khoản để gửi thông báo cho gia đình. Mã này bị xoá khi bạn đăng xuất hoặc xoá tài khoản.</li>
+    <li><strong>Báo cáo sự cố:</strong> khi ứng dụng gặp lỗi, Firebase Crashlytics nhận dấu vết lỗi, dòng máy, phiên bản hệ điều hành, phiên bản ứng dụng và một mã bản cài đặt. Ứng dụng không gắn email, mã tài khoản hay số liệu tài chính vào báo cáo.</li>
+  </ul>
+  <p>Ứng dụng <strong>không</strong> kết nối với ngân hàng, không tự đọc tin nhắn SMS, không thu thập vị trí hay danh bạ, và <strong>không dùng công cụ thống kê sử dụng</strong> (analytics).</p>
+
+  <h3>Dữ liệu chỉ xử lý trên máy bạn</h3>
+  <ul>
+    <li><strong>Quét mã QR, đọc ảnh chụp màn hình, dán tin nhắn ngân hàng:</strong> chỉ chạy khi bạn chọn. Ảnh và văn bản được đọc <strong>ngay trên máy</strong> (Apple Vision trên iOS, Google ML Kit với mô hình đóng gói sẵn trong ứng dụng trên Android) và không được tải lên. Ảnh bạn chọn bị xoá sau khi đọc. Ứng dụng chỉ giữ các trường đã đọc được (số tiền, ngày, nội dung…) dưới dạng bản nháp trên máy để bạn kiểm tra; văn bản gốc của tin nhắn — vốn có thể chứa số dư tài khoản — không được lưu. Chỉ khi bạn bấm Xác nhận, giao dịch mới được ghi vào sổ như mọi giao dịch khác.</li>
+    <li><strong>Khoá ứng dụng bằng vân tay hoặc Face ID:</strong> do hệ điều hành kiểm tra. Ứng dụng không nhận được dữ liệu sinh trắc học; nó chỉ lưu trên máy một cờ bật/tắt cho mỗi tài khoản.</li>
+    <li><strong>Bộ nhớ đệm ngoại tuyến:</strong> để dùng được khi mất mạng, ứng dụng giữ một bản sao dữ liệu của gia đình trên máy. Bản sao này bị xoá khi bạn gỡ ứng dụng.</li>
+  </ul>
+
+  <h3>Nơi lưu trữ</h3>
+  <p>Dữ liệu được lưu trên Google Firebase (Authentication, Cloud Firestore, Cloud Functions) tại khu vực <strong>asia-southeast1 (Singapore)</strong>. Xem thêm <a href="https://firebase.google.com/support/privacy">quyền riêng tư và bảo mật của Firebase</a>.</p>
+
+  <h3>Thông báo đẩy</h3>
+  <p>Ứng dụng báo cho các thành viên khác khi có người ghi hoặc sửa giao dịch, ngân sách, mục tiêu hay khoản nợ, và cảnh báo khi một ngân sách sắp hết hoặc đã vượt. Thông báo đi qua dịch vụ của Google (Firebase Cloud Messaging) và Apple (APNs) và có thể hiện trên màn hình khoá, nên <strong>nội dung thông báo không bao giờ chứa số tiền</strong> — chỉ có tên người thực hiện, loại thay đổi, và tên danh mục khi có cảnh báo ngân sách. Bạn tắt thông báo trong cài đặt hệ thống của điện thoại.</p>
+
+  <h3>Quảng cáo</h3>
+  <p>Ứng dụng có thể hiển thị <strong>một</strong> biểu ngữ quảng cáo Google AdMob, chỉ ở thẻ Gia đình — không bao giờ ở màn hình có số liệu, trong biểu mẫu hay ở màn hình khoá. Quảng cáo <strong>không được cá nhân hoá</strong>: ứng dụng không dùng mã quảng cáo của thiết bị (quyền này bị gỡ trên Android, và trên iOS ứng dụng không xin quyền theo dõi). Để hiển thị và đo lường quảng cáo, Google vẫn có thể nhận một số dữ liệu kỹ thuật như địa chỉ IP và loại thiết bị, theo <a href="https://policies.google.com/technologies/partner-sites">chính sách của Google</a>. <strong>Dữ liệu tài chính của gia đình không bao giờ được gửi cho mạng quảng cáo.</strong></p>
+
+  <h3>Chia sẻ và bán dữ liệu</h3>
+  <p>Dữ liệu của bạn không được bán, cho thuê hay dùng cho quảng cáo. Ngoài các thành viên trong gia đình bạn, dữ liệu chỉ được xử lý bởi các nhà cung cấp dịch vụ nêu trên (Google Firebase, Apple, Google AdMob) để vận hành ứng dụng.</p>
+
+  <h3>Quyền ứng dụng yêu cầu</h3>
+  <ul>
+    <li><strong>Máy ảnh</strong> — quét mã QR thanh toán. Ảnh không được lưu.</li>
+    <li><strong>Ảnh</strong> — đọc ảnh chụp màn hình bạn tự chọn.</li>
+    <li><strong>Sinh trắc học / Face ID</strong> — khoá ứng dụng, nếu bạn bật.</li>
+    <li><strong>Thông báo</strong> — nhận thông báo từ gia đình và cảnh báo ngân sách.</li>
+    <li><strong>Internet</strong> — đồng bộ dữ liệu với máy chủ.</li>
+  </ul>
+  <p>Ứng dụng <strong>không</strong> yêu cầu vị trí, danh bạ, micro, tin nhắn SMS hay danh sách ứng dụng đã cài.</p>
+
+  <h3>Thời gian lưu và xoá dữ liệu</h3>
+  <p>Dữ liệu được giữ trong khi tài khoản còn tồn tại. Bạn tự xoá tài khoản được ngay trong ứng dụng. Vì dữ liệu tài chính thuộc về cả gia đình, <strong>các giao dịch bạn đã ghi vẫn được giữ cho người còn lại</strong>, kèm tên hiển thị của bạn; nếu bạn là thành viên cuối cùng, toàn bộ dữ liệu của gia đình bị xoá. Chi tiết từng bước: <a href="/family-finance/delete-data.html">trang Xoá dữ liệu và tài khoản</a>.</p>
+
+  <h3>Trẻ em</h3>
+  <p>Ứng dụng không nhắm tới trẻ em dưới 13 tuổi và chúng tôi không cố ý thu thập thông tin từ trẻ em dưới 13 tuổi.</p>
+
+  <h3>Thay đổi chính sách</h3>
+  <p>Nếu chính sách này thay đổi, bản cập nhật sẽ được đăng tại chính địa chỉ này kèm ngày cập nhật mới.</p>
+
+  <h3>Liên hệ</h3>
+  <p>Email: <a href="mailto:ducdv.bk94@gmail.com">ducdv.bk94@gmail.com</a></p>
+
+  <h2 id="en">English</h2>
+  <p><strong>Family Finance</strong> ("the app") is published by Duc Dinh Van. It is a shared ledger for the members of one household — usually a couple — to record their accounts, transactions, budgets, goals, assets and debts together. The app requires an account, because the data has to be shared between members.</p>
+
+  <h3>Who can see your data</h3>
+  <p><strong>Every member of a family can see all of that family's financial data</strong>, including each other's personal accounts. That is the purpose of the app, not a setting. Nobody outside the family can: server-side security rules refuse every non-member, and every change involving money goes through the server, where membership is checked again.</p>
+
+  <h3>Data we collect</h3>
+  <ul>
+    <li><strong>Account:</strong> email address, password and display name. Sign-in is handled by Firebase Authentication; passwords are never stored in readable form.</li>
+    <li><strong>Financial data you enter:</strong> accounts, transactions, categories, budgets, goals, assets, debts, and a history of changes (who recorded or edited what, and when). That history is append-only.</li>
+    <li><strong>Family invitations:</strong> only a hash of the invitation code is stored, never the code itself. Codes expire, work once, and can be revoked.</li>
+    <li><strong>Device:</strong> your phone's push token, linked to your account so the family's notifications can reach you. It is deleted when you sign out or delete your account.</li>
+    <li><strong>Crash reports:</strong> when the app fails, Firebase Crashlytics receives the stack trace, device model, OS version, app version and an installation id. The app does not attach your email, account id or any financial figure.</li>
+  </ul>
+  <p>The app does <strong>not</strong> connect to your bank, read your SMS on its own, collect location or contacts, or <strong>use any usage analytics</strong>.</p>
+
+  <h3>Data processed only on your device</h3>
+  <ul>
+    <li><strong>Scanning a QR code, reading a screenshot, pasting a bank message:</strong> these run only when you choose them. Images and text are read <strong>on the device</strong> (Apple Vision on iOS; Google ML Kit with a model bundled in the app on Android) and are not uploaded. A picked image is deleted after reading. The app keeps only the fields it read (amount, date, description…) as a draft on the device for you to check; the original message text — which can include your account balance — is not stored. Only when you tap Confirm is a transaction written to the ledger, like any other.</li>
+    <li><strong>Fingerprint / Face ID app lock:</strong> checked by the operating system. The app never receives biometric data; it stores only an on/off flag per account on the device.</li>
+    <li><strong>Offline cache:</strong> so the app works without a connection, it keeps a copy of your family's data on the device. Uninstalling the app removes it.</li>
+  </ul>
+
+  <h3>Where data is stored</h3>
+  <p>Data is stored with Google Firebase (Authentication, Cloud Firestore, Cloud Functions) in the <strong>asia-southeast1 (Singapore)</strong> region. See <a href="https://firebase.google.com/support/privacy">Firebase's privacy and security information</a>.</p>
+
+  <h3>Push notifications</h3>
+  <p>The app tells the other members when someone records or edits a transaction, budget, goal or debt, and warns when a budget is nearly used up or exceeded. Notifications pass through Google (Firebase Cloud Messaging) and Apple (APNs) and can appear on a locked screen, so <strong>a notification never contains an amount</strong> — only who acted, what kind of change it was, and the category name for a budget alert. Turn notifications off in your phone's system settings.</p>
+
+  <h3>Advertising</h3>
+  <p>The app may show <strong>one</strong> Google AdMob banner, on the Family tab only — never on a screen showing figures, in a form, or on the lock screen. Ads are <strong>not personalized</strong>: the app does not use your device's advertising identifier (the permission is removed on Android, and on iOS the app never asks to track). To serve and measure ads, Google may still receive technical data such as IP address and device type, per <a href="https://policies.google.com/technologies/partner-sites">Google's policy</a>. <strong>Your family's financial data is never sent to an ad network.</strong></p>
+
+  <h3>Sharing and selling</h3>
+  <p>Your data is not sold, rented or used for advertising. Apart from the members of your family, it is processed only by the service providers named above (Google Firebase, Apple, Google AdMob) to run the app.</p>
+
+  <h3>Permissions the app requests</h3>
+  <ul>
+    <li><strong>Camera</strong> — scan payment QR codes. No photo is kept.</li>
+    <li><strong>Photos</strong> — read a screenshot you pick yourself.</li>
+    <li><strong>Biometrics / Face ID</strong> — the app lock, if you turn it on.</li>
+    <li><strong>Notifications</strong> — family activity and budget alerts.</li>
+    <li><strong>Internet</strong> — sync with the server.</li>
+  </ul>
+  <p>The app does <strong>not</strong> request location, contacts, microphone, SMS or your installed-app list.</p>
+
+  <h3>Retention and deletion</h3>
+  <p>Data is kept for as long as the account exists. You can delete your account yourself from inside the app. Because the financial records belong to the whole family, <strong>the transactions you recorded stay with the remaining member</strong>, under your display name; if you are the last member, all of the family's data is deleted. Step by step: <a href="/family-finance/delete-data.html">data and account deletion page</a>.</p>
+
+  <h3>Children</h3>
+  <p>The app is not directed at children under 13, and we do not knowingly collect information from children under 13.</p>
+
+  <h3>Changes to this policy</h3>
+  <p>If this policy changes, the updated version will be posted at this same address with a revised last-updated date.</p>
+
+  <h3>Contact</h3>
+  <p>Email: <a href="mailto:ducdv.bk94@gmail.com">ducdv.bk94@gmail.com</a></p>
+
+  <footer>
+    <a href="/family-finance/">Quyền riêng tư</a>
+    <a href="/family-finance/support.html">Hỗ trợ</a>
+    <a href="/family-finance/delete-data.html">Xoá dữ liệu &amp; tài khoản</a>
+    <br /><br />Tài chính Gia đình · Family Finance
+  </footer>
+</main>
+</body>
+</html>
